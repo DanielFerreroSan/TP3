@@ -1,0 +1,4 @@
+En el primer ejemplo ademas de destacar el tiempo que demora un bucle for de 100000000 que es infimo, se observa que al ejecutar varias veces el codigo el tiempo es predecible.Un ejemplo de proceso de maxima velocidad que depende de la velocidad de la maquina seria reproducir un archivo de video previamente descargado. Uno de naturaleza impredecible, seria reproducir un video en linea.
+En el segundo ejemplo, los tiempos de ejecucion de cada tarea son similares, pero se optimiza el tiempo final, ya que las esperas de cada tarea se superponen. Un ejemplo de esto seria el buffering de un video.
+Para el caso de el codigo acumulador, el tiempo de ejecucion no varia significativamente entre la version sin hilos, pero el resultado si. Esto sucede porque se accede y modifica la variable global simultaneamente por los dos hilos.
+Al agregar el uso de lock, el resultado si es el correcto y el tiempo de ejecucion no varia considerablemente.
